@@ -26,6 +26,10 @@ struct Person {
   }
 };
 
+void find_size(Person *AHP){
+    cout<<sizeof(AHP)/sizeof(AHP[0])<<endl;
+}
+
 int main() {
   Person umang, harsh, jay;
   Person arr_of_structs[3];
@@ -56,4 +60,5 @@ int main() {
   }
 
   cout<<sizeof(arr_of_structs)/sizeof(arr_of_structs[0])<<endl;
+  find_size(arr_of_structs);
 }
