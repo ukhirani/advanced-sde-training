@@ -54,4 +54,6 @@ int main() {
   for (auto person : arr_of_pointers) {
     person->name_printer();
   }
+
+  cout<<sizeof(arr_of_structs)/sizeof(arr_of_structs[0])<<endl;
 }
