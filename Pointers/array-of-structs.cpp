@@ -7,6 +7,12 @@ struct Person {
   int height;
   int weight;
 
+  Person(){
+      name = "Umang";
+      height = weight = 1;
+      cout<<"Constructor Invoked !"<<endl;
+  }
+
   void hello() { cout << "hello " << name; }
   void setter(string name1, int height1, int weight1) {
     name = name1;
@@ -19,7 +25,7 @@ struct Person {
 };
 
 int main() {
-  Person umang, harsh, jay, mahida;
+  Person umang, harsh, jay;
   Person arr_of_structs[3];
   Person *arr_of_pointers[3];
 
@@ -40,7 +46,7 @@ int main() {
     person.name_printer();
   }
 
-  cout<<endl;
+  cout << endl;
 
   cout << "Printing through array of pointers" << endl;
   for (auto person : arr_of_pointers) {
