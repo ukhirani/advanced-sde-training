@@ -6,14 +6,16 @@ struct Person {
   string name;
   int height;
   int weight;
+  double doglo;
 
-  Person(){
-      name = "Umang";
-      height = weight = 1;
-      cout<<"Constructor Invoked !"<<endl;
-  }
+  // Person(){
+  //     name = "Umang";
+  //     height = weight = 1;
+  //     cout<<"Constructor Invoked !"<<endl;
+  // }
 
-  void hello() { cout << "hello " << name; }
+  //the constructer will be called 6 times, 3 for creating objects and 3 objects of arrays
+
   void setter(string name1, int height1, int weight1) {
     name = name1;
     height = height1;
