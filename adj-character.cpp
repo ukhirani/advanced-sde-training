@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 string reorganizeString(string s) {
   unordered_map<char, int> mp;
   char max_char;
@@ -19,13 +18,11 @@ string reorganizeString(string s) {
     return "";
   }
 
-
-  for (int i = 0; i < max_freq; i ++) {
+  for (int i = 0; i < max_freq; i++) {
     s[index] = max_char;
-    index+=2;
+    index += 2;
   }
   mp.erase(max_char);
-  // index += 2;
 
   for (auto hello : mp) {
 
