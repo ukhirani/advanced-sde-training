@@ -6,6 +6,7 @@ using namespace std;
 int main(int argc, char *argv[]) {
   int target = 56;
   vector<int> arr = {1, 2, 5, 6, 7, 8, 56};
+
   bool found = false;
   int left = 0, right = arr.size() - 1;
   while (left <= right) {
